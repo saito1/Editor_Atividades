@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.edu.rafaelsaito.editoratividades">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Editor de Atividades"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppThemeNoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".aluno.AlunoActivity"
+            android:label="Novo Aluno" />
+        <activity
+            android:name=".aluno.MenuAlunoActivity"
+            android:label="Menu do Aluno"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".aluno.ListaAlunosActivity"
+            android:label="Alunos Cadastrados" />
+        <activity
+            android:name=".atividade_ativa.OrientacaoAtivaActivity"
+            android:label="Orientações para Atividade" />
+        <activity
+            android:name=".atividade_ativa.NovaAtividadeAtivaActivity"
+            android:label="Nova Atividade"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".atividade_ativa.ListaAtividadesAtivasActivity"
+            android:label="Lista de Atividades" />
+        <activity android:name=".MenuAtividadeActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".atividade_passiva.OrientacaoPassivaActivity"
+            android:label="Orientações para Atividade" />
+        <activity
+            android:name=".atividade_passiva.NovaAtividadePassivaActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+        <activity
+            android:name=".atividade_passiva.ListaAtividadesPassivasActivity"
+            android:label="Lista de Atividades" />
+        <activity
+            android:name=".MenuListaAtividadeActivity"
+            android:theme="@style/AppThemeNoActionBar" />
+    </application>
+
+</manifest>

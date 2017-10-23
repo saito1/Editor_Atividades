@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColorHint="@color/alpha_black_50">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/nome_aluno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Nome Aluno"
+                android:maxLines="1"
+                android:lines="1"
+                android:textColor="@color/alpha_black_50"
+                android:textSize="16sp"
+                android:imeOptions="actionNext" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_layout_adress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/alpha_black_50">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/endereco_aluno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Endereço Aluno"
+                android:maxLines="1"
+                android:lines="1"
+                android:textColor="@color/alpha_black_50"
+                android:textSize="16sp"
+                android:imeOptions="actionNext" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_layout_responsavel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/alpha_black_50">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/nome_responsavel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="Nome do(a) Responsável"
+                android:maxLines="1"
+                android:lines="1"
+                android:textColor="@color/alpha_black_50"
+                android:textSize="16sp"
+                android:imeOptions="actionNext" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_layout_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/alpha_black_50">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/telefone_aluno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Telefone"
+                android:maxLines="1"
+                android:lines="1"
+                android:textColor="@color/alpha_black_50"
+                android:textSize="16sp"
+                android:imeOptions="actionNext" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/botao_salvar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="33dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginRight="29dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/havelock_blue_rounded_corners"
+            android:fontFamily="sans-serif-bold"
+            android:text="Salvar"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+
+    </LinearLayout>
+
+</ScrollView>
+
